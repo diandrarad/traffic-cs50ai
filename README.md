@@ -65,6 +65,27 @@ The Traffic Sign Recognition AI performs the following tasks:
 - Optimizer, loss function, and metrics are the same as the first model
 
 ### 3. Third Model:
+333/333 - 4s - loss: 0.0448 - accuracy: 0.9885 - 4s/epoch - 11ms/step
+
+    model = tf.keras.models.Sequential(
+        [
+            tf.keras.layers.Conv2D(32, (3, 3), activation='relu', input_shape=(IMG_WIDTH, IMG_HEIGHT, 3)),
+            tf.keras.layers.BatchNormalization(),
+            tf.keras.layers.MaxPooling2D(pool_size=(2, 2)),
+            tf.keras.layers.Conv2D(64, (3, 3), activation='relu'),
+            tf.keras.layers.BatchNormalization(),
+            tf.keras.layers.MaxPooling2D(pool_size=(2, 2)),
+            tf.keras.layers.Conv2D(128, (3, 3), activation='relu'),
+            tf.keras.layers.BatchNormalization(),
+            tf.keras.layers.MaxPooling2D(pool_size=(2, 2)),
+            tf.keras.layers.Flatten(),
+            tf.keras.layers.Dense(256, activation='relu'),
+            tf.keras.layers.BatchNormalization(),
+            tf.keras.layers.Dropout(0.5),
+            tf.keras.layers.Dense(NUM_CATEGORIES, activation='softmax')
+        ]
+    )
+
 - Same as the last model, but with the addition of BatchNormalization layers after each Conv2D and Dense layer
 - Optimizer, loss function, and metrics are the same as the third model
 

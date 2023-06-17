@@ -11,6 +11,7 @@ The Traffic Sign Recognition AI is built using the following technologies:
 - TensorFlow: An open-source machine learning framework used for building and training the deep learning model.
 - Keras: A high-level neural networks API, running on top of TensorFlow, used for defining the model architecture and training the AI.
 - GTSRB Dataset: The full GTSRB dataset, containing a wide range of traffic sign images, is utilized for training the AI model.
+- scikit-learn: Simple and efficient tools for predictive data analysis.
 
 ## Functionality
 The Traffic Sign Recognition AI performs the following tasks:

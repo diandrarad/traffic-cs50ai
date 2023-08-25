@@ -1,5 +1,7 @@
 # Traffic Sign Recognition AI
 
+### [Video Demo](https://youtu.be/EYIJz404cME)
+
 ## Description
 This project showcases an artificial intelligence (AI) model that can accurately identify which traffic sign appears in a photograph. The model has been trained using the full GTSRB (German Traffic Sign Recognition Benchmark) dataset, which contains various traffic sign images. By leveraging deep learning techniques and computer vision, the AI model demonstrates remarkable accuracy in recognizing traffic signs, making it a valuable tool for applications such as autonomous vehicles and road safety systems.
 
